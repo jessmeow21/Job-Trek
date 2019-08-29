@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <title>Job Hunt</title>
+</head>
+
+<body>
+    <!--  sidebar menu -->
+    <div class="wrapper">
+        <div class="sidebar">
+            <a class="logo " href="# "><img src="img/temp-logo.png " width="50px " height="50px "></a>
+
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="#"><i class="fas fa-project-diagram"></i>Search Job</a></li>
+                <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
+            </ul>
+        </div>
+
+
+        <div class="main_content">
+            <!-- <div class="header">Welcome</div> -->
+            <div class="info">
+            </div>
+            <!-- Adding input form -->
+
+            <!-- Editable table -->
+            <div class="card">
+                <div class="card-body">
+                    <div id="table" class="table-editable">
+                        <!-- form inside -->
+
+
+                        <!-- end of form -->
+                        <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                        <div class="create-form">
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="position">Position</label>
+                                <input type="text" id="position" name="position">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date">Date Applied</label>
+                                <input type="text" id="position" name="position">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fu">Follow Up</label>
+                                <input type="text" id="position" name="position">
+                            </div>
+
+                        </div>
+                        <table class="table table-bordered table-responsive-md table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">Company Name</th>
+                                    <th class="text-center">Position</th>
+                                    <th class="text-center">Date Applied</th>
+                                    <th class="text-center">Last Activity</th>
+                                    <th class="text-center">Status</th>
+                                    <th class="text-center">Sort</th>
+                                    <th class="text-center">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true">Google</td>
+                                    <td class="pt-3-half" contenteditable="true">Full Stack Dev</td>
+                                    <td class="pt-3-half" contenteditable="true">01/02/2019</td>
+                                    <td class="pt-3-half" contenteditable="true">Sent Resume</td>
+                                    <td class="pt-3-half" contenteditable="true">Pending Response</td>
+                                    <td class="pt-3-half">
+                                        <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
+                                        <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
+                                    </td>
+                                    <td>
+                                        <span class="table-remove"><button type="button"class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                                    </td>
+                                </tr>
+
+                                <!-- This is our clonable table line -->
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true">Google</td>
+                                    <td class="pt-3-half" contenteditable="true">Full Stack Dev</td>
+                                    <td class="pt-3-half" contenteditable="true">01/02/2019</td>
+                                    <td class="pt-3-half" contenteditable="true">Sent Resume</td>
+                                    <td class="pt-3-half" contenteditable="true">Pending Response</td>
+                                    <td class="pt-3-half">
+                                        <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
+                                        <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
+                                    </td>
+                                    <td>
+                                        <span class="table-remove"><button type="button"class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                                    </td>
+                                </tr>
+                                <!-- This is our clonable table line -->
+                                <tr class="hide">
+                                    <td class="pt-3-half" contenteditable="true">Google</td>
+                                    <td class="pt-3-half" contenteditable="true">Full Stack Dev</td>
+                                    <td class="pt-3-half" contenteditable="true">01/02/2019</td>
+                                    <td class="pt-3-half" contenteditable="true">Sent Resume</td>
+                                    <td class="pt-3-half" contenteditable="true">Pending Response</td>
+                                    <td class="pt-3-half">
+                                        <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
+                                        <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
+                                    </td>
+                                    <td>
+                                        <span class="table-remove"><button type="button"class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- js -->
+    <script src="js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
