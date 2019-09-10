@@ -1,41 +1,32 @@
 $(document).ready(function() {
+  var companyInput = $("#company");
+  var positionInput = $("#position");
+  var statusInput = $("#status");
+  var salaryInput = $("#salaryModal");
 
-    var companyInput = $("#company");
-    var positionInput = $("#position");
-    var statusInput = $("#status");
-    var salaryInput = $("#salaryModal");
+  $("#submitNewJob").on("click", function() {
+    console.log("addjob");
 
-    $("#submitNewJob").on("click", function() {
-        console.log("addjob");
+    var salaryVal = salaryInput.val().trim();
+    var salArr = salaryVal.split("-");
+    var salMin = parseInt(salArr[0]);
+    var salMax = parseInt(salArr[1]);
+    var newJob = {
+      company: companyInput.val().trim(),
+      position: positionInput.val().trim(),
+      status: statusInput.val().trim(),
+      salaryMin: salMin,
+      salaryMax: salMax,
+      UserId: 1
+    };
 
-        var salaryVal = salaryInput.val().trim();
-        var salArr = salaryVal.split("-");
-        var salMin = parseInt(salArr[0]);
-        var salMax = parseInt(salArr[1]);
-        var newJob = {
-            company: companyInput
-                .val()
-                .trim(),
-            position: positionInput
-                .val()
-                .trim(),
-            status: statusInput
-                .val()
-                .trim(),
-            salaryMin: salMin,
-            salaryMax: salMax,
-            UserId: 1
-        }
+    // console.log(newJob);
+    createJob(newJob);
+  });
 
-        // console.log(newJob);
-        createJob(newJob);
+  function createJob(newJob) {
+    $.post("/api/job", newJob, function(res) {
+      console.log("this is res", res);
     });
-
-    function createJob(newJob) {
-        $.post("/api/job", newJob, function(res) {
-            console.log("this is res", res)
-        });
-    }
-
-
+  }
 });
