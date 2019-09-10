@@ -21,15 +21,12 @@ $(document).ready(function() {
             position: positionInput
                 .val()
                 .trim(),
-            activity: activityInput
-                .val()
-                .trim(),
             status: statusInput
                 .val()
                 .trim(),
             salaryMin: salMin,
             salaryMax: salMax,
-            userId: 1
+            UserId: 1
         }
 
         // console.log(newJob);
