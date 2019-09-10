@@ -2,12 +2,10 @@ $(document).ready(function() {
 
     var companyInput = $("#company");
     var positionInput = $("#position");
-    var activityInput = $("#activity");
     var statusInput = $("#status");
     var salaryInput = $("#salaryModal");
 
     $("#submitNewJob").on("click", function() {
-        event.preventDefault();
         console.log("addjob");
 
         var salaryVal = salaryInput.val().trim();

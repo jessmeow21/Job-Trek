@@ -5,7 +5,7 @@ module.exports = function(sequelize, DataTypes) {
         status: DataTypes.STRING,
         notes: DataTypes.TEXT,
         salaryMin: DataTypes.INTEGER,
-        salaryMax: DataTypes.INTEGER
+        salaryMax: DataTypes.INTEGER,
     });
 
     Job.associate = function(models) {

@@ -31,5 +31,10 @@ module.exports = function(app) {
         });
     });
 
+    app.get("/api/job", function(req, res) {
+        db.Job.findAll({
+            where:
+        })
+    })
 
 };
