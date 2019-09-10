@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
+    <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="styles/sidebar.css">
     <title>Job Hunt</title>
 </head>
@@ -26,11 +26,11 @@
             <a class="logo " href="# "><img src="img/temp-logo.png " width="50px " height="50px "></a>
 
             <ul>
-                <li><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
-                <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
-                <li><a href="#"><i class="fas fa-search"></i>Search Job</a></li>
-                <li><a href="#"><i class="fas fa-history"></i>History</a></li>
-                <li><a href="#"><i class="fas fa-mug-hot"></i>Trending</a></li>
+                <li><a href="landing.html"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="searchjob.html"><i class="fas fa-search"></i>Search Job</a></li>
+                <li><a href="history.html"><i class="fas fa-history"></i>History</a></li>
+                <li><a href="trending.html"><i class="fas fa-mug-hot"></i>Trending</a></li>
 
             </ul>
         </div>
@@ -62,9 +62,11 @@
                         </th>
                         <th>Company</th>
                         <th>Position</th>
-                        <th>Last Activity</th>
+                        <th>Deadline</th>
                         <th>Status</th>
                         <th>Salary</th>
+                        <th>Notes</th>
+                        <th>Hot</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -80,77 +82,70 @@
                         <td>Full Stack Dev</td>
                         <td>01/02/2019</td>
                         <td>
-                            <select data-placeholder="" class="chosen-select" id="q10">
+                            <select data-placeholder="" class="chosen-select" id="">
                                 <option value="">Select</option>
                                 <option value="1">To do</option>
                                 <option value="2">Applied</option>
                                 <option value="3">Waiting for a response</option>
                                 <option value="4">Interview</option>
                                 <option value="5">Got the job!</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select data-placeholder="" class="chosen-select" id="salary">
+
+                                <option value="ABC">Select</option>
+                                <option value="30,000 - 40,000">30,000 - 40,000</option>
+                                <option value="40,000 - 50,000">40,000 - 50,000</option>
+                                <option value="50,000 - 60,000">50,000 - 60,000</option>
+                                <option value="60,000 - 70,000">60,000 - 70,000</option>
+                                <option value="70,000 - 80,000">70,000 - 80,0000</option>
+                                <option value="80,000 - 90,000">80,000 - 90,000</option>
+                                <option value="90,000 - 100,000">90,000 - 100,000</option>
+                                <option value="100,000 - 120,000">100,000 - 120,000</option>
                               </select>
                         </td>
-                        <td>70k</td>
                         <td>
-                            <a href="#editJobModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteJobModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            <a href="#editNotesModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">note_add</i></a>
                         </td>
-                    </tr>
-                    <tr>
                         <td>
-                            <span class="custom-checkbox">
-                            <input type="checkbox" id="checkbox3" name="options[]" value="1">
-                            <label for="checkbox3"></label>
-                        </span>
+                            <div class="stars" data-rating="3">
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                            </div>
                         </td>
-                        <td>Facebook</td>
-                        <td>React Developer</td>
-                        <td>01/02/2019</td>
-                        <td><select data-placeholder="" class="chosen-select" id="">
-                            <option value="">Select an Option</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                          </select></td>
-                        <td>65k</td>
-                        <td>
-                            <a href="#editJobModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteJobModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="custom-checkbox">
-                            <input type="checkbox" id="checkbox3" name="options[]" value="1">
-                            <label for="checkbox3"></label>
-                        </span>
-                        </td>
-                        <td>Vanguard</td>
-                        <td>Full Stack Web Dev</td>
-                        <td>01/02/2019</td>
-                        <td>Interview</td>
-                        <td>Doesn't Say</td>
-                        <td>
-                            <a href="#editJobModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteJobModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        </td>
-                    </tr>
-
-
-                </tbody>
-            </table>
-            <div class="clearfix">
-                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-                <ul class="pagination">
-                    <li class="page-item disabled"><a href="#">Previous</a></li>
-                    <li class="page-item"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                    <li class="page-item"><a href="#" class="page-link">4</a></li>
-                    <li class="page-item"><a href="#" class="page-link">5</a></li>
-                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                </ul>
+        </div>
+        </td>
+        <td>
+            <a href="#editJobModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+            <a href="#deleteJobModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
+    <!-- Notes Modal HTML -->
+    <div id="editNotesModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Notes about this post</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <textarea name="message" rows="10" cols="40"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-info" value="Save">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -166,28 +161,41 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label>Company Name</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" id="company" required>
                         </div>
                         <div class="form-group">
                             <label>Position</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" id="position" required>
                         </div>
                         <div class="form-group">
-                            <label>Last Activity</label>
-                            <textarea class="form-control" required></textarea>
+                            <label>Deadline</label>
+                            <input type="text" class="form-control" id="activity" required>
                         </div>
                         <div class="form-group">
                             <label>Status</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" id="status" required>
                         </div>
                         <div class="form-group">
                             <label>Salary</label>
-                            <textarea class="form-control" required></textarea>
+
+                            <select data-placeholder="" class="chosen-select" id="salaryModal">
+
+                                <option value="">Select</option>
+                                <option value="30000-40000">30,000 - 40,000</option>
+                                <option value="40000-50000">40,000 - 50,000</option>
+                                <option value="50000-60000">50,000 - 60,000</option>
+                                <option value="60000-70000">60,000 - 70,000</option>
+                                <option value="70000-80000">70,000 - 80,0000</option>
+                                <option value="80000-90000">80,000 - 90,000</option>
+                                <option value="90000-100000">90,000 - 100,000</option>
+                                <option value="100000-120000">100,000 - 120,000</option>
+                              </select>
+
                         </div>
                     </div>
                     <div class="modal-footer">
                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <input type="submit" class="btn btn-success" value="Add">
+                        <input type="submit" class="btn btn-success" value="Add" id="submitNewJob">
                     </div>
                 </form>
             </div>
@@ -212,8 +220,8 @@
                             <input type="text" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Last Activity</label>
-                            <textarea class="form-control" required></textarea>
+                            <label>Deadline</label>
+                            <input type="text" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Status</label>
@@ -222,7 +230,18 @@
                         </div>
                         <div class="form-group">
                             <label>Salary</label>
-                            <textarea class="form-control" required></textarea>
+                            <select data-placeholder="" class="chosen-select" id="salaryEdit">
+
+                                <option value="">Select</option>
+                                <option value="30,000 - 40,000">30,000 - 40,000</option>
+                                <option value="40,000 - 50,000">40,000 - 50,000</option>
+                                <option value="50,000 - 60,000">50,000 - 60,000</option>
+                                <option value="60,000 - 70,000">60,000 - 70,000</option>
+                                <option value="70,000 - 80,000">70,000 - 80,0000</option>
+                                <option value="80,000 - 90,000">80,000 - 90,000</option>
+                                <option value="90,000 - 100,000">90,000 - 100,000</option>
+                                <option value="100,000 - 120,000">100,000 - 120,000</option>
+                              </select>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -255,8 +274,9 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/table.js"></script>
+    <script src="js/star.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
