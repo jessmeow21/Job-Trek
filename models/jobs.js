@@ -12,9 +12,9 @@ module.exports = function(sequelize, DataTypes) {
     // We're saying that a Job should belong to a User
     // A Job can't be created without an User due to the foreign key constraint
     Job.belongsTo(models.User, {
-      foreignKey: {
-        allowNull: false
-      }
+      // foreignKey: {
+      //   allowNull: false
+      // }
     });
   };
 

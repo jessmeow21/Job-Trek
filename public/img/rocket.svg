@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 128 128" version="1.1">
+  <defs id="defs4">
+    <linearGradient id="linearGradient3734-8" x1="300" gradientUnits="userSpaceOnUse" y1="306.36" gradientTransform="matrix(.26806 -.034576 .034576 .26806 -14.057 859.57)" x2="372" y2="452.36">
+      <stop id="stop3730-1" stop-color="#fff" offset="0"/>
+      <stop id="stop3732-6" stop-color="#fff" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3693-6" x1="340.5" xlink:href="#linearGradient3681-9" gradientUnits="userSpaceOnUse" y1="756.37" gradientTransform="matrix(.27028 0 0 .27028 667.45 481.12)" x2="340.5" y2="617.31"/>
+    <linearGradient id="linearGradient3681-9">
+      <stop id="stop3683-3" stop-color="#b3b3b3" offset="0"/>
+      <stop id="stop3685-1" stop-color="#959595" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3721-3" y2="348.59" gradientUnits="userSpaceOnUse" y1="443.68" x2="325.76" x1="384.95">
+      <stop id="stop3717-0" stop-color="#adc5d5" offset="0"/>
+      <stop id="stop3719-9" stop-color="#dce6ed" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3713-1" x1="290.08" xlink:href="#linearGradient3671-6" gradientUnits="userSpaceOnUse" x2="417.25" y1="392.52" y2="393.57"/>
+    <linearGradient id="linearGradient3671-6">
+      <stop id="stop3673-3" stop-color="#bfbfbf" offset="0"/>
+      <stop id="stop3679-4" stop-color="#eee" offset=".5"/>
+      <stop id="stop3675-0" stop-color="#979797" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3695-0" x1="342" xlink:href="#linearGradient3681-9" gradientUnits="userSpaceOnUse" y1="601.4" gradientTransform="matrix(.27028 0 0 .27028 667.45 481.12)" x2="342" y2="546.36"/>
+    <linearGradient id="linearGradient3677-0" x1="177" xlink:href="#linearGradient3671-6" gradientUnits="userSpaceOnUse" y1="507.36" gradientTransform="matrix(.18583 .19626 -.19626 .18583 109.56 815.45)" x2="487.86" y2="502.36"/>
+    <linearGradient id="linearGradient3711-4" y2="788.36" gradientUnits="userSpaceOnUse" y1="639.36" x2="407" x1="366">
+      <stop id="stop3707-0" stop-color="#ff0" offset="0"/>
+      <stop id="stop3709-4" stop-color="#ff0" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <filter id="filter3768-1" width="1.2151" y="-.17711" x="-.10757" height="1.3542" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur3770-9" stdDeviation="7.3057692"/>
+    </filter>
+    <linearGradient id="linearGradient3689-8" x1="-731.23" xlink:href="#linearGradient3681-9" gradientUnits="userSpaceOnUse" y1="210.15" gradientTransform="matrix(.27028 0 0 .27028 -865.01 -90.161)" x2="-634.35" y2="201.15"/>
+    <linearGradient id="linearGradient3687-4" x1="70.654" xlink:href="#linearGradient3681-9" gradientUnits="userSpaceOnUse" y1="760.86" gradientTransform="matrix(.27028 0 0 .27028 659.54 931.39)" x2="119.07" y2="714.97"/>
+    <filter id="filter3804-2" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur3806-4" stdDeviation="3.9326923"/>
+    </filter>
+    <linearGradient id="linearGradient3889" y2="507.36" gradientUnits="userSpaceOnUse" x2="406" y1="779.36" x1="419">
+      <stop id="stop3699-1" stop-color="#ff4700" offset="0"/>
+      <stop id="stop3701-9" stop-color="#ffcf00" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1" transform="translate(0 -924.36)">
+    <path id="path3667" style="color:#000000" d="m252 657.36-18 92 39-26-2 73 33-41 49 48 17-58 59 56 22-45 11 11-32-114-68-31-110 35z" transform="matrix(.18583 .19626 -.19626 .18583 109.56 815.45)" filter="url(#filter3804-2)" fill="url(#linearGradient3889)"/>
+    <rect id="rect3631" transform="matrix(.99562 .093523 -.58740 .80930 0 0)" height="29.225" width="22.022" y="1111.8" x="675.97" fill="url(#linearGradient3687-4)"/>
+    <rect id="rect3633" transform="matrix(-.039084 -.99924 -.84013 .54239 0 0)" height="29.225" width="22.022" y="-50.407" x="-1058.5" fill="url(#linearGradient3689-8)"/>
+    <path id="path3669" style="color:#000000" d="m268 653.36-9 41 32-22-2 60 28-36 20 31 30-43 46 31 9-67-86-15-68 20z" transform="matrix(.18583 .19626 -.19626 .18583 109.56 815.45)" filter="url(#filter3768-1)" fill="url(#linearGradient3711-4)"/>
+    <path id="rect2831" fill="url(#linearGradient3677-0)" d="m74.972 931.2c18.719-8.461 46.172 0.0176 46.172 0.0176s6.9686 27.875-2.5007 46.105-60.571 47.675-60.571 47.675-7.5502-15.443-13.275-21.489c-5.725-6.0462-20.733-14.427-20.733-14.427s32.188-49.419 50.907-57.88z"/>
+    <rect id="rect3635" transform="matrix(.68755 .72613 -.72613 .68755 0 0)" height="43.245" width="3.5137" y="633.38" x="757.73" fill="url(#linearGradient3695-0)"/>
+    <path id="path3637" transform="matrix(.17828 .18828 -.18828 .17828 104.28 822.38)" fill="url(#linearGradient3713-1)" d="m411 400.86a61.5 61.5 0 1 1 -123 0 61.5 61.5 0 1 1 123 0z"/>
+    <path id="path3639" transform="matrix(.19152 .20227 -.20227 .19152 106.06 804.72)" fill="url(#linearGradient3721-3)" d="m416 421.36a49 49 0 1 1 -98 0 49 49 0 1 1 98 0z"/>
+    <rect id="rect3691" transform="matrix(.68755 .72613 -.72613 .68755 0 0)" height="29.191" width="3.5137" y="647.44" x="757.73" fill="url(#linearGradient3693-6)"/>
+    <path id="path3723" fill="url(#linearGradient3734-8)" d="m89.873 946.96c-6.9582 0.89753-11.871 7.2658-10.974 14.224 0.23702 1.8377 0.86003 3.5263 1.7703 5.0092 3.6203-9.06 9.9588-14.604 17.648-17.35-2.4211-1.5428-5.3742-2.279-8.4441-1.8831z"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Toy rocket</dc:title>
+        <dc:date>2010-03-22T07:36:03</dc:date>
+        <dc:description>A toy-looking rocket</dc:description>
+        <dc:source>http://openclipart.org/detail/32959/toy-rocket-by-nicubunu-32959</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>nicubunu</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>flight</rdf:li>
+            <rdf:li>rocket</rdf:li>
+            <rdf:li>space</rdf:li>
+            <rdf:li>toy</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
