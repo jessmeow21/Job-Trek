@@ -1,0 +1,49 @@
+body {
+    background-image: url("../img/spaceBackground4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100%;
+}
+
+.signup,
+h2 {
+    color: white;
+}
+
+.row {
+    margin-top: 70px;
+}
+
+#firstImage {
+    border-right: 2px solid #0fd6cd;
+    border-left: 2px solid #0fd6cd;
+    background-image: url("../img/test_banner4.png");
+    height: 400px;
+    width: 700px;
+    background-color: rgb(32, 87, 168, 0.3);
+    border-radius: 25px;
+}
+
+a {
+    color: #0fd6cd;
+}
+
+p {
+    color: white;
+}
+
+#footer {
+    height: 10px;
+    color: white;
+}
+
+.cr {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.navbar-default {
+    background-color: #000000;
+    border-color: #021939;
+}

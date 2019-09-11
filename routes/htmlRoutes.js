@@ -22,6 +22,10 @@ module.exports = function(app) {
     }
   });
 
+  app.get("/landing", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/landing.html"));
+  });
+
   app.get("/profile", authenticate, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
