@@ -29,7 +29,7 @@ $(document).ready(function() {
       password: password
     })
       .then(function(data) {
-        // window.location.replace("/landing");
+        window.location.replace("/login");
         console.log(data);
         // If there's an error, handle it by throwing up a bootstrap alert
       })

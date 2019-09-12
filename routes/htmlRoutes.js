@@ -10,8 +10,12 @@ module.exports = function(app) {
     if (req.user) {
       res.redirect("/profile");
     } else {
-      res.sendFile(path.join(__dirname, "../public/signup.html"));
+      res.redirect(307, "/signup");
     }
+  });
+
+  app.get("/signup", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
   app.get("/login", function(req, res) {
@@ -20,10 +24,6 @@ module.exports = function(app) {
     } else {
       res.sendFile(path.join(__dirname, "../public/login.html"));
     }
-  });
-
-  app.get("/landing", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/landing.html"));
   });
 
   app.get("/profile", authenticate, function(req, res) {
