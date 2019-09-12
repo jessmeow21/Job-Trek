@@ -30,6 +30,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/landing.html"));
   });
 
+  app.get("/logout", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/login.html"));
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.send("404");
