@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/sidebar.css">
 
@@ -39,14 +38,18 @@
     </div>
     <!-- end of sidebar menu -->
 
-    <!-- banner -->
-    <section id="banner ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-md-12 ">
-                    <p class="promo-title ">Make your job hunt organized</p>
-                    <!-- <div class="text ">Make your job hunt organized</div> -->
-                    <button type="button " class="btn btn-primary ">Begin Now</button>
+    <!-- new table -->
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Manage Jobs</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#addJobModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Job</span></a>
+                        <a href="#deleteJobModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
+                    </div>
                 </div>
             </div>
 
@@ -246,36 +249,28 @@
                 </form>
             </div>
         </div>
-    </section>
-
-    <!-- About  -->
-    <div class="about ">
-        <h2>What does this app do?</h2>
     </div>
-    <section id="about ">
-        <div class="container2 ">
-            <div class="row ">
-                <div class="col-md-4 ">
-                    <img src="img/iconfinder_Search_2362208.png " alt=" ">
-                    <h4>Add this tool to your job hunting journey.</h4>
-                </div>
-                <div class="col-md-4 ">
-                    <img src="img/iconfinder_19_2135796.png " alt=" ">
-                    <img src="img/iconfinder_04_171508.png " class="phoneicon " alt=" ">
-                    <h4>Wherever you are, laptop or phone.</h4>
-                </div>
-                <div class="col-md-4 ">
-                    <img src="img/iconfinder_Resume_Suitcase_2316261.png " alt=" ">
-                    <h4>See the files you have sent to each posting.</h4>
-                </div>
+    <!-- Delete Modal HTML -->
+    <div id="deleteJobModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Delete Job</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete these Records?</p>
+                        <p class="text-warning"><small>This action cannot be undone.</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-danger" value="Delete">
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <section id="footer ">
-        <p class="cr ">©Copyright 2019</p>
-    </section>
+    </div>
 
 
 
