@@ -18,4 +18,11 @@ module.exports = function(app) {
         res.status(401).json(err);
       });
   });
+
+   // Create a new Job...	
+   app.post("/api/job", function(req, res) {	
+    db.Job.create(req.body).then(function(dbJob) {	
+      res.json(dbJob);	
+    });	
+  });
 };
