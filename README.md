@@ -17,6 +17,9 @@ This application is for those seeking job opportunities and having a way to orga
 **Database**
 MySQL
 
+**New Tech**
+bounce.js
+
 **Motivation for this App**
 <br/>
 This is a solution for those seeking job opportunities as a way to keep themselves organized during this time of landing a job. 
