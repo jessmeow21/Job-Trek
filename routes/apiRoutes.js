@@ -25,4 +25,16 @@ module.exports = function(app) {
       res.json(dbJob);
     });
   });
+
+  // GET route to return a User's jobs...
+  app.get("/api/job", function(req, res) {
+    db.Job.findAll({
+      where: {
+        UserId: 1
+      }
+    }).then(function(dbJob) {
+      res.json(dbJob);
+    });
+  });
+
 };
