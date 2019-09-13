@@ -8,8 +8,7 @@ This application is for those seeking job opportunities and having a way to orga
 
 ### Technologies Used
 **APIs**
-1).
-2).
+1). Authentic Jobs API
 
 **Style Sheets**
 1). Bootstrap CSS
@@ -26,13 +25,15 @@ This is a solution for those seeking job opportunities as a way to keep themselv
 
 
 **Team Efforts**
-
+Ryan - Back End, API
+Dan - Back End, Database
+Jessica - Front End, Design UI/UX
 
 **Challenges Faced While Building the App**<br />
 * Commit conflicts
 
 **Next Steps**<br />
 What we would like to improve and add to this app:
-1). Make stars functional. This shows how important or "hot" an opportunity is.
+1). Make the fire emojis rating functional. This shows how important or "hot" an opportunity is.
 2). The History page will have deleted opportunities just for user reference.
 3). 
