@@ -1,4 +1,3 @@
-console.log("we in here");
 $(document).ready(function() {
   // Getting references to our form and inputs
   var loginForm = $("form.login");
@@ -25,7 +24,6 @@ $(document).ready(function() {
 
   // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
   function loginUser(email, password) {
-    // BRING ME BACK IN AFTER TESTING
     $.post("/api/login", {
       email: email,
       password: password
