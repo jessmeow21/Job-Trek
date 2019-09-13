@@ -16,6 +16,7 @@
 
 
     <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/sass.css">
     <title>Job Trek</title>
 </head>
 
@@ -33,28 +34,51 @@
         </div>
     </div>
 
-    <!-- profile content -->
+    <!-- search content -->
     <div class="container">
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h2>Search</h2>
+                        <h2>Search a job</h2>
                     </div>
-
                 </div>
             </div>
             <div class="card">
-                <h5 class="card-header">Search a job</h5>
                 <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
+                    <form>
+                        <div class="col-sm-5">
+                            <h3>Position</h3>
+                            <input type="text" class="form-control" id="positionInput" placeholder="JavaScript Developer">
+                        </div>
+                        <div class="col-sm-5">
+                            <h3>Location</h3>
+                            <input type="text" class="form-control" id="locationInput" placeholder="Philadelphia, PA">
+                        </div>
+                        <button type="submit" id="searchJob" class="btn btn-primary">Search</button>
+                    </form>
+                    <div class="table-wrapper">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Position</th>
+                                    <th>Location</th>
+                                    <th>Type</th>
+                                    <th>View
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <button type="submit" class="btn btn-primary">View</button> -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
