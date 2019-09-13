@@ -63,14 +63,14 @@
                             <label for="selectAll"></label>
                         </span>
                         </th>
-                        <th>Company</th>
-                        <th>Position</th>
-                        <th>Deadline</th>
-                        <th>Status</th>
-                        <th>Salary</th>
-                        <th>Notes</th>
-                        <th>Hot</th>
-                        <th>Actions</th>
+                        <th>🏢Company</th>
+                        <th>🔑Position</th>
+                        <th>⌛Deadline</th>
+                        <th>🎚Status</th>
+                        <th>💰Salary</th>
+                        <th>&#x1F4DD</th>
+                        <th>🔥Priority</th>
+                        <th>Edit/Trash</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -106,23 +106,23 @@
                                 <option value="80,000 - 90,000">80,000 - 90,000</option>
                                 <option value="90,000 - 100,000">90,000 - 100,000</option>
                                 <option value="100,000 - 120,000">100,000 - 120,000</option>
-                              </select>
+                            </select>
                         </td>
                         <td>
-                            <a href="#editNotesModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">note_add</i></a>
+                            <a href="#editNotesModal" class="edit" data-toggle="modal">&#x1F4DD</a>
                         </td>
                         <td>
-                            <div class="stars" data-rating="3">
-                                <span class="star">&nbsp;</span>
-                                <span class="star">&nbsp;</span>
-                                <span class="star">&nbsp;</span>
+                            <div class="fire" data-rating="3">
+                                <span class="fire">🔥</span>
+                                <span class="fire">🔥</span>
+                                <span class="fire">🔥</span>
                             </div>
                         </td>
         </div>
         </td>
         <td>
-            <a href="#editJobModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-            <a href="#deleteJobModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+            <a href="#editJobModal" class="edit" data-toggle="modal">✏️
+            <a href="#deleteJobModal" class="delete" data-toggle="modal">🗑️</a>
         </td>
         </tr>
         </tbody>
@@ -135,7 +135,7 @@
             <div class="modal-content">
                 <form>
                     <div class="modal-header">
-                        <h4 class="modal-title">Notes about this post</h4>
+                        <h4 class="modal-title">Notes</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
@@ -172,7 +172,15 @@
 
                         <div class="form-group">
                             <label>Status</label>
-                            <input type="text" class="form-control" id="status" required>
+                            <td>
+                                <select data-placeholder="" class="chosen-select" id="status">
+                                        <option value="">Select</option>
+                                        <option value="1">To do</option>
+                                        <option value="2">Applied</option>
+                                        <option value="3">Waiting for a response</option>
+                                        <option value="4">Interview</option>
+                                        <option value="5">Got the job!</option>
+                                    </select>
                         </div>
                         <div class="form-group">
                             <label>Salary</label>
@@ -224,8 +232,14 @@
                         </div>
                         <div class="form-group">
                             <label>Status</label>
-                            <input type="text" class="form-control" required>
-                            <!-- dropdown -->
+                            <select data-placeholder="" class="chosen-select" id="status">
+                                    <option value="">Select</option>
+                                    <option value="1">To do</option>
+                                    <option value="2">Applied</option>
+                                    <option value="3">Waiting for a response</option>
+                                    <option value="4">Interview</option>
+                                    <option value="5">Got the job!</option>
+                                </select>
                         </div>
                         <div class="form-group">
                             <label>Salary</label>
