@@ -19,10 +19,10 @@ module.exports = function(app) {
       });
   });
 
-   // Create a new Job...	
-   app.post("/api/job", function(req, res) {	
-    db.Job.create(req.body).then(function(dbJob) {	
-      res.json(dbJob);	
-    });	
+  // Create a new Job...
+  app.post("/api/job", function(req, res) {
+    db.Job.create(req.body).then(function(dbJob) {
+      res.json(dbJob);
+    });
   });
 };
