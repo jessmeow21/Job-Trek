@@ -20,14 +20,18 @@ module.exports = function(app) {
 
   app.get("/login", function(req, res) {
     if (req.user) {
-      res.redirect("/profile");
+      res.redirect("/landing");
     } else {
       res.sendFile(path.join(__dirname, "../public/login.html"));
     }
   });
 
-  app.get("/profile", authenticate, function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/profile.html"));
+  app.get("/landing", authenticate, function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/landing.html"));
+  });
+
+  app.get("/logout", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
   // Render 404 page for any unmatched routes
