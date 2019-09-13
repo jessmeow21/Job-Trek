@@ -1,7 +1,7 @@
 {
     "development": {
         "username": "root",
-        "password": "null",
+        "password": "Null",
         "database": "job_tracker_db",
         "host": "localhost",
         "dialect": "mysql"
