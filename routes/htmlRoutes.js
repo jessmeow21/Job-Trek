@@ -8,14 +8,18 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     console.log(req.user);
     if (req.user) {
-      res.redirect("/profile");
+      res.redirect("/landing");
     } else {
       res.redirect(307, "/signup");
     }
   });
 
   app.get("/signup", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/signup.html"));
+    if (req.user) {
+      res.redirect("/login");
+    } else {
+      res.sendFile(path.join(__dirname, "../public/signup.html"));
+    }
   });
 
   app.get("/login", function(req, res) {
@@ -29,6 +33,14 @@ module.exports = function(app) {
   app.get("/landing", authenticate, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/landing.html"));
   });
+
+  // Displays a user, or returns false
+  // app.get("/landing/userId", function(req, res) {
+  //   var userId = req.user.id;
+  //   res.send(userId);
+
+  //   return res.json(false);
+  // });
 
   app.get("/logout", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/login.html"));
