@@ -5,16 +5,18 @@ module.exports = function(sequelize, DataTypes) {
     status: DataTypes.STRING,
     notes: DataTypes.TEXT,
     salaryMin: DataTypes.INTEGER,
-    salaryMax: DataTypes.INTEGER
+    salaryMax: DataTypes.INTEGER,
+    priority: DataTypes.STRING,
+    deadline: DataTypes.DATE
   });
 
   Job.associate = function(models) {
     // We're saying that a Job should belong to a User
     // A Job can't be created without an User due to the foreign key constraint
     Job.belongsTo(models.User, {
-      // foreignKey: {
-      //   allowNull: false
-      // }
+      foreignKey: {
+        allowNull: false
+      }
     });
   };
 
