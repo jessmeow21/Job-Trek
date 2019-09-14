@@ -2,7 +2,7 @@ body {
     background-image: url("../img/spaceBackground4.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
     max-height: 100%;
 }
 

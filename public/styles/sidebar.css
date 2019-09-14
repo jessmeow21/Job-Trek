@@ -87,17 +87,6 @@ body {
 }
 
 
-/* .pt-3-half {
-    padding-top: 1.4rem;
-} */
-
-.logo {
-    display: block;
-    margin-left: 70px;
-    margin-bottom: 20px;
-}
-
-
 /* ===================table css */
 
 .container {
@@ -105,9 +94,7 @@ body {
 }
 
 body {
-    /* color: #1654B6; */
     background: #f5f5f5;
-    /* background: #F4E4C1; */
     font-family: 'Varela Round', sans-serif;
     font-size: 13px;
 }
@@ -131,7 +118,8 @@ body {
 
 .table-title h2 {
     margin: 5px 0 0;
-    font-size: 24px;
+    font-size: 15px;
+    margin-left: 10px;
 }
 
 .table-title .btn-group {
