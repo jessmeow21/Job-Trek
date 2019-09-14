@@ -34,19 +34,19 @@ module.exports = function(app) {
   app.get("/landing", authenticate, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/landing.html"));
   });
-  
+
   app.get("/profile", authenticate, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
-  
+
   app.get("/searchjob", authenticate, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/searchjob.html"));
   });
-  
+
   app.get("/history", authenticate, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/history.html"));
   });
-    
+
   app.get("/trending", authenticate, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/trending.html"));
   });
