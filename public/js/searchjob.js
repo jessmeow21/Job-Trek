@@ -2,7 +2,6 @@
 $(document).ready(function() {
   // JQuery variables
   var keywordInput = $("#positionInput");
-  console.log(keywordInput);
   var cityInput = $("#cityInput");
   var stateInput = $("#stateInput");
   var searchJob = $("#searchJob");
@@ -10,8 +9,11 @@ $(document).ready(function() {
   // When the form is submitted, we validate there's an email and password entered
   searchJob.on("click", function(event) {
     event.preventDefault();
-
-    var keywords = keywordInput.val().trim();
+    $("tbody").remove("td.searched");
+    var keywords = keywordInput
+      .val()
+      .trim()
+      .toLowerCase();
     var city = cityInput
       .val()
       .trim()
@@ -23,13 +25,9 @@ $(document).ready(function() {
       .toLowerCase();
     var keyword = keywords.split(/[ ,]+/).join(",");
     var location = city + state;
+    console.log(keyword);
 
-    // console.log(keyword);
-    // console.log(city);
-    // console.log(state);
-    // console.log(location);
-
-    // If we have an email and password we run the loginUser function and clear the form
+    // Calls getJobs function which searches Authentic API using keyword and location
     getJobs(keyword, location);
     keywordInput.val("");
     cityInput.val("");
@@ -52,13 +50,55 @@ $(document).ready(function() {
       method: "GET"
     }).then(function(response) {
       console.log(response);
+      var listings = response.listings.listing;
+
+      var jobs = [];
+      for (var i = 0; i < listings.length; i++) {
+        var listing = listings[i];
+        var job = {
+          company: listing.company.name,
+          position: listing.title,
+          location: listing.company.location.name,
+          type: listing.type.name,
+          view: listing.url
+        };
+        jobs.push(job);
+      }
+      displayTable(jobs);
     });
   }
 
-  // var keywordInput = "javascript,developer";
-  // var locationInput = "philadelphiapa";
+  function displayTable(jobsArr) {
+    console.log(jobsArr);
+    for (var i = 0; i < jobsArr.length; i++) {
+      var company = jobsArr[i].company;
+      var position = jobsArr[i].position;
+      var location = jobsArr[i].location;
+      var type = jobsArr[i].type;
+      var view = jobsArr[i].view;
 
-  // getJobs(keywordInput, locationInput);
+      var row = $("<tr>").appendTo("tbody");
+      var col1 = $("<td>")
+        .appendTo(row)
+        .text(company)
+        .addClass("searched");
+      var col2 = $("<td>")
+        .appendTo(row)
+        .text(position)
+        .addClass("searched");
+      var col3 = $("<td>")
+        .appendTo(row)
+        .text(location)
+        .addClass("searched");
+      var col4 = $("<td>")
+        .appendTo(row)
+        .text(type)
+        .addClass("searched");
+      var col5 = $("<td><a href=" + view + " target='_blank'>View Job</td>")
+        .appendTo(row)
+        .addClass("searched");
+    }
+  }
 
   /*
    * ----------------------------------------------------------------
