@@ -39,19 +39,19 @@ $(document).ready(function() {
   // Create Table Row...
   function insertTableRow (dbJob) {
     // 1. dbJob should be an array of objects, loop through array of objects and create each row...
-    dbJob.forEach(element => {
-      const table = $("#jobGrid");
-      const tr = $("<tr>");
-      const td = $("<td>");
-      const checkBoxTd = $('<td><span class="custom-cdeckbox"><input type="checkbox" id="selectAll"><label for="selectAll"></label></span></td>');
-      const companyTd = $(`<td>${element.company}</td>`);
-      const positionTd = $(`<td>${element.position}</td>`);
-      const deadlineTd = $(`<td>${new Date ().toDateString()}</td>`);
-      const statusTd = $(`<td>${decodeJobStatus(element.status)}</td>`);
-      const salaryTd = $(`<td>${element.salaryMin} - ${element.salaryMax}</td>`);
-      const notesTd = $(`<td><a href="#editNotesModal" class="edit" data-toggle="modal" data-id="${element.id}">&#x1F4DD</a></td>`);
-      const priorityTd = $(`<td><div class="fire" data-rating="3"><span class="fire">🔥</span><span class="fire">🔥</span><span class="fire">🔥</span></div></td>`);
-      const editTd = $(`<td><a href="#editJobModal" class="edit" data-toggle="modal" data-id="${element.id}">✏️<a href="#deleteJobModal" class="delete" data-toggle="modal"data-id=${element.id}>🗑️</a></td>`)
+    dbJob.forEach(function(element) {
+      var table = $("#jobGrid");
+      var tr = $("<tr>");
+      var td = $("<td>");
+      var checkBoxTd = $('<td><span class="custom-cdeckbox"><input type="checkbox" id="selectAll"><label for="selectAll"></label></span></td>');
+      var companyTd = $(`<td>${element.company}</td>`);
+      var positionTd = $(`<td>${element.position}</td>`);
+      var deadlineTd = $(`<td>${new Date ().toDateString()}</td>`);
+      var statusTd = $(`<td>${decodeJobStatus(element.status)}</td>`);
+      var salaryTd = $(`<td>${element.salaryMin} - ${element.salaryMax}</td>`);
+      var notesTd = $(`<td><a href="#editNotesModal" class="edit" data-toggle="modal" data-id="${element.id}">&#x1F4DD</a></td>`);
+      var priorityTd = $(`<td><div class="fire" data-rating="3"><span class="fire">🔥</span><span class="fire">🔥</span><span class="fire">🔥</span></div></td>`);
+      var editTd = $(`<td><a href="#editJobModal" class="edit" data-toggle="modal" data-id="${element.id}">✏️<a href="#deleteJobModal" class="delete" data-toggle="modal"data-id=${element.id}>🗑️</a></td>`)
 
       // console.log(element.id);
       console.log(element);
