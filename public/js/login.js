@@ -34,6 +34,21 @@ $(document).ready(function() {
       })
       .catch(function(err) {
         console.log(err);
+        if (err.responseText === "Unauthorized") {
+          $(emailInput)
+            .attr("placeholder", "User does not exist")
+            .attr("role", "alert")
+            .val("")
+            .focus()
+            .blur()
+            .addClass("alert alert-danger");
+          $(passwordInput)
+            .addClass("alert alert-danger")
+            .attr("role", "alert")
+            .val("")
+            .focus()
+            .blur();
+        }
       });
   }
 });
