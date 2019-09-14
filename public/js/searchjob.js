@@ -78,23 +78,23 @@ $(document).ready(function() {
       var view = jobsArr[i].view;
 
       var row = $("<tr>").appendTo("tbody");
-      var col1 = $("<td>")
+      $("<td>")
         .appendTo(row)
         .text(company)
         .addClass("searched");
-      var col2 = $("<td>")
+      $("<td>")
         .appendTo(row)
         .text(position)
         .addClass("searched");
-      var col3 = $("<td>")
+      $("<td>")
         .appendTo(row)
         .text(location)
         .addClass("searched");
-      var col4 = $("<td>")
+      $("<td>")
         .appendTo(row)
         .text(type)
         .addClass("searched");
-      var col5 = $("<td><a href=" + view + " target='_blank'>View Job</td>")
+      $("<td><a href=" + view + " target='_blank'>View Job</td>")
         .appendTo(row)
         .addClass("searched");
     }
