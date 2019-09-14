@@ -1,9 +1,6 @@
 {
     "development": {
-        "username": "root",
-        "password": "@gxYSCx&Y%sf",
-        "database": "job_tracker_db",
-        "host": "localhost",
+        "use_env_variable": "DB_CONNECTION_STRING",
         "dialect": "mysql"
     },
     "test": {

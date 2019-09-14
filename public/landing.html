@@ -31,11 +31,11 @@
     <div class="wrapper">
         <div class="sidebar">
             <ul>
-                <li><a href="landing.html"><i class="fas fa-home"></i>Dashboard</a></li>
-                <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
-                <li><a href="searchjob.html"><i class="fas fa-search"></i>Search Job</a></li>
-                <li><a href="history.html"><i class="fas fa-history"></i>History</a></li>
-                <li><a href="trending.html"><i class="fas fa-mug-hot"></i>Trending</a></li>
+                <li><a href="/landing"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="/profile"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="/searchjob"><i class="fas fa-search"></i>Search Job</a></li>
+                <li><a href="/history"><i class="fas fa-history"></i>History</a></li>
+                <li><a href="/trending"><i class="fas fa-mug-hot"></i>Trending</a></li>
                 <li><a href="/logout"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>
             </ul>
         </div>
@@ -79,8 +79,8 @@
                         <th>Edit/Trash</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody id="jobGrid">
+                    <!-- <tr>
                         <td>
                             <span class="custom-checkbox">
                             <input type="checkbox" id="checkbox1" name="options[]" value="1">
@@ -115,7 +115,7 @@
                             </select>
                         </td>
                         <td>
-                            <a href="#editNotesModal" class="edit" data-toggle="modal">&#x1F4DD</a>
+                            <a href="#editNotesModal" class="edit" data-toggle="modal" data-id="">&#x1F4DD</a>
                         </td>
                         <td>
                             <div class="fire" data-rating="3">
@@ -124,15 +124,15 @@
                                 <span class="fire">🔥</span>
                             </div>
                         </td>
+                    </td>
+                    <td>
+                        <a href="#editJobModal" class="edit" data-toggle="modal">✏️
+                            <a href="#deleteJobModal" class="delete" data-toggle="modal">🗑️</a>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
         </div>
-        </td>
-        <td>
-            <a href="#editJobModal" class="edit" data-toggle="modal">✏️
-            <a href="#deleteJobModal" class="delete" data-toggle="modal">🗑️</a>
-        </td>
-        </tr>
-        </tbody>
-        </table>
     </div>
 
     <!-- Notes Modal HTML -->

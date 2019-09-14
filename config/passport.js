@@ -43,6 +43,8 @@ passport.serializeUser(function(user, cb) {
   cb(null, user);
 });
 
+// passport.serializeUser((user,done) => {done.user.UserId});
+
 passport.deserializeUser(function(obj, cb) {
   cb(null, obj);
 });
